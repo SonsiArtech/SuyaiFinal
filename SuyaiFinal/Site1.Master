@@ -18,15 +18,6 @@
   <form id="form1" runat="server">
     <!-- Inicio de header -->
     <header>
-      <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
-        <Items>
-          <asp:MenuItem NavigateUrl="~/Pages/index.aspx"></asp:MenuItem>
-          <asp:MenuItem NavigateUrl="~/Pages/SobreNostros.aspx"></asp:MenuItem>
-          <asp:MenuItem NavigateUrl="~/Pages/VisionMision.aspx"></asp:MenuItem>
-          <asp:MenuItem NavigateUrl="~/Pages/Contacto.aspx"></asp:MenuItem>
-          <asp:MenuItem NavigateUrl="~/Pages/IniciarSesion.aspx"></asp:MenuItem>
-        </Items>
-      </asp:Menu>
       <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">SUYAI</a>
@@ -34,9 +25,25 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
+            <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" class="navbar-nav ms-auto" BackColor="#198754" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="White" StaticSubMenuIndent="10px">
+              <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+              <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+              <DynamicMenuStyle BackColor="#B5C7DE" />
+              <DynamicSelectedStyle BackColor="#006600" />
+              <Items>
+                <asp:MenuItem NavigateUrl="~/Pages/index.aspx" Text="Inicio" ></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Pages/SobreNosotros.aspx" Text="Sobre Nosotros"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Pages/VisionMision.aspx" Text="Visión y Misión"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Pages/Contacto.aspx" Text="Contacto"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Pages/IniciarSesion.aspx" Text="Iniciar Sesión"></asp:MenuItem>
+              </Items>
+              <StaticHoverStyle BackColor="#006600" ForeColor="White" />
+              <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+              <StaticSelectedStyle BackColor="#507CD1" />
+            </asp:Menu>
+           <%-- <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/Pages/index.aspx">Inicio</a>
+                <a class="nav-link" aria-current="page" href="/Pages/index.aspx">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/Pages/SobreNosotros.aspx">Sobre nosotros</a>
@@ -50,7 +57,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="IniciarSesion.aspx">Iniciar Sesión</a>
               </li>
-            </ul>
+            </ul>--%>
           </div>
         </div>
       </nav>
