@@ -15,13 +15,13 @@ namespace SuyaiFinal.Pages
   {
 
     /// <summary>
-    /// Control TxtNom.
+    /// Control TxtRut.
     /// </summary>
     /// <remarks>
     /// Campo generado automáticamente.
     /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.TextBox TxtNom;
+    protected global::System.Web.UI.WebControls.TextBox TxtRut;
 
     /// <summary>
     /// Control RequiredFieldValidator1.
@@ -33,13 +33,13 @@ namespace SuyaiFinal.Pages
     protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
 
     /// <summary>
-    /// Control TxtCorr.
+    /// Control TxtNombre.
     /// </summary>
     /// <remarks>
     /// Campo generado automáticamente.
     /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.TextBox TxtCorr;
+    protected global::System.Web.UI.WebControls.TextBox TxtNombre;
 
     /// <summary>
     /// Control RequiredFieldValidator2.
@@ -51,22 +51,13 @@ namespace SuyaiFinal.Pages
     protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
 
     /// <summary>
-    /// Control RegularExpressionValidator1.
+    /// Control TxtApellido.
     /// </summary>
     /// <remarks>
     /// Campo generado automáticamente.
     /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
-
-    /// <summary>
-    /// Control TxtEdad.
-    /// </summary>
-    /// <remarks>
-    /// Campo generado automáticamente.
-    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.TextBox TxtEdad;
+    protected global::System.Web.UI.WebControls.TextBox TxtApellido;
 
     /// <summary>
     /// Control RequiredFieldValidator3.
@@ -78,22 +69,13 @@ namespace SuyaiFinal.Pages
     protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
 
     /// <summary>
-    /// Control CompareValidator1.
+    /// Control TxtEdad.
     /// </summary>
     /// <remarks>
     /// Campo generado automáticamente.
     /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
-
-    /// <summary>
-    /// Control TxtContraseña.
-    /// </summary>
-    /// <remarks>
-    /// Campo generado automáticamente.
-    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.TextBox TxtContraseña;
+    protected global::System.Web.UI.WebControls.TextBox TxtEdad;
 
     /// <summary>
     /// Control RequiredFieldValidator4.
@@ -105,22 +87,13 @@ namespace SuyaiFinal.Pages
     protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
 
     /// <summary>
-    /// Control CompareValidator2.
+    /// Control TxtTelefono.
     /// </summary>
     /// <remarks>
     /// Campo generado automáticamente.
     /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.CompareValidator CompareValidator2;
-
-    /// <summary>
-    /// Control TxtReContraseña.
-    /// </summary>
-    /// <remarks>
-    /// Campo generado automáticamente.
-    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.TextBox TxtReContraseña;
+    protected global::System.Web.UI.WebControls.TextBox TxtTelefono;
 
     /// <summary>
     /// Control RequiredFieldValidator5.
@@ -132,30 +105,147 @@ namespace SuyaiFinal.Pages
     protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
 
     /// <summary>
-    /// Control CompareValidator3.
+    /// Control TxtCorreo.
     /// </summary>
     /// <remarks>
     /// Campo generado automáticamente.
     /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.CompareValidator CompareValidator3;
+    protected global::System.Web.UI.WebControls.TextBox TxtCorreo;
 
     /// <summary>
-    /// Control BtnRegistro.
+    /// Control RequiredFieldValidator6.
     /// </summary>
     /// <remarks>
     /// Campo generado automáticamente.
     /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.Button BtnRegistro;
+    protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
 
     /// <summary>
-    /// Control LinkVolver.
+    /// Control TxtDireccion.
     /// </summary>
     /// <remarks>
     /// Campo generado automáticamente.
     /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.LinkButton LinkVolver;
+    protected global::System.Web.UI.WebControls.TextBox TxtDireccion;
+
+    /// <summary>
+    /// Control RequiredFieldValidator7.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator7;
+
+    /// <summary>
+    /// Control TxtCiudad.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.TextBox TxtCiudad;
+
+    /// <summary>
+    /// Control RequiredFieldValidator8.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator8;
+
+    /// <summary>
+    /// Control TxtUser.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.TextBox TxtUser;
+
+    /// <summary>
+    /// Control RequiredFieldValidator9.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator9;
+
+    /// <summary>
+    /// Control TxtPass.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.TextBox TxtPass;
+
+    /// <summary>
+    /// Control RequiredFieldValidator10.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator10;
+
+    /// <summary>
+    /// Control TxtRePass.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.TextBox TxtRePass;
+
+    /// <summary>
+    /// Control RequiredFieldValidator11.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator11;
+
+    /// <summary>
+    /// Control DropComunidad.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.DropDownList DropComunidad;
+
+    /// <summary>
+    /// Control RequiredFieldValidator12.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator12;
+
+    /// <summary>
+    /// Control BtnAgregar.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Button BtnAgregar;
+
+    /// <summary>
+    /// Control LbRegistro.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Label LbRegistro;
   }
 }

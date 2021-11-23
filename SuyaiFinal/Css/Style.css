@@ -35,8 +35,6 @@
     line-height: 20pt;
     font-size: 12pt;
     color: #222;
-    
-
 }
 
 .parrafo .poema {
@@ -113,8 +111,8 @@ footer {
     text-align: center;
     margin: 40px;
     padding: 20px;
-    width: 600px;
-    height: 500px;
+    width: 800px;
+    height: 800px;
     background-color: green;
 }
 

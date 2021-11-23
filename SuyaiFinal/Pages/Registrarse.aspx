@@ -1,41 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Registrarse.aspx.cs" Inherits="SuyaiFinal.Pages.Registrarse" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-  <style type="text/css">
-    .auto-style1 {
-      width: 187px;
-    }
-
-    .auto-style2 {
-    width: 241px;
-  }
-    .auto-style3 {
-      width: 187px;
-      height: 27px;
-    }
-    .auto-style4 {
-      width: 241px;
-      height: 27px;
-    }
-    .auto-style5 {
-      width: 246px;
-    }
-    .auto-style6 {
-      width: 246px;
-      height: 27px;
-    }
-    .auto-style8 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin: 40px 20px;
-      padding: 20px;
-      width: 700px;
-      height: 600px;
-      background-color: green;
-    }
-  </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
   <!--Inicio del banner para crear cuenta -->
@@ -45,55 +10,93 @@
     </div>
   </section>
   <section class="fondo-banner">
-    <div class="auto-style8">
-      <form class="row g-8">
-        <%--<div class="col-md-4">
-          <label for="TxtRut" class="form-label">Rut</label>
-          <asp:TextBox ID="TxtRut" runat="server" type="text" class="form-control" placeholder="Ingrese su rut"></asp:TextBox>
+    <div class="caja-iniciar-registro">
+      <form class="row">
+        <%--RUT--%>
+        <div class="row">
+          <label for="TxtRut" class="col-form-label">Rut</label>
+          <div class="col-12">
+            <asp:TextBox ID="TxtRut" runat="server" class="form-control" aria-describedby="TxtRut" type="text" placeholder="Ingrese su Rut"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Campo Requerido" ForeColor="Red" ControlToValidate="TxtRut"></asp:RequiredFieldValidator>
+          </div>
         </div>
-        <div class="col-md-6">
-          <label for="TxtNombre" class="form-label">Nombre</label>
-          <asp:TextBox ID="TxtNombre" runat="server" type="text" class="form-control" placeholder="Ingrese su nombre"></asp:TextBox>
+        <%--NOMBRE Y APELLIDO--%>
+        <div class="row">
+          <label class="form-label">Nombre y Apellido</label>
+          <div class="col-6">
+            <asp:TextBox ID="TxtNombre" runat="server" type="text" class="form-control" placeholder="Ingrese su Nombre"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="TxtNombre"></asp:RequiredFieldValidator>
+          </div>
+          <div class="col-6">
+            <asp:TextBox ID="TxtApellido" runat="server" type="text" class="form-control" placeholder="Ingrese su Apellido"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="TxtApellido"></asp:RequiredFieldValidator>
+          </div>
         </div>
-        <div class="col-md-6">
-          <label for="TxtApellido" class="form-label">Apellido</label>
-          <asp:TextBox ID="TxtApellido" runat="server" type="text" class="form-control" placeholder="Ingrese su apellido"></asp:TextBox>
+        <%--EDAD--%>
+        <div class="row">
+          <label for="TxtEdad" class="col-form-label">Edad</label>
+          <div class="col-12">
+            <asp:TextBox ID="TxtEdad" runat="server" class="form-control" aria-describedby="TxtEdad" type="number" placeholder="Ingrese su Edad"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Campo Requerido" ForeColor="Red" ControlToValidate="TxtEdad"></asp:RequiredFieldValidator>
+          </div>
         </div>
-        <div class="col-md-6">
-          <label for="TxtTelefono" class="form-label">Telefono</label>
-          <asp:TextBox ID="TxtTelefono" runat="server" type="number" class="form-control" placeholder="Ingrese su telefono"></asp:TextBox>
+        <%--TELEFONO Y CORREO--%>
+        <div class="row">
+          <label class="form-label">Telefono y Correo</label>
+          <div class="col-6">
+            <asp:TextBox ID="TxtTelefono" runat="server" type="number" class="form-control" placeholder="Ingrese su Telefono"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="TxtTelefono"></asp:RequiredFieldValidator>
+          </div>
+          <div class="col-6">
+            <asp:TextBox ID="TxtCorreo" runat="server" type="mail" class="form-control" placeholder="Ingrese su Correo"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="TxtCorreo"></asp:RequiredFieldValidator>
+          </div>
         </div>
-        <div class="col-md-6">
-          <label for="TxtCorreo" class="form-label">Correo</label>
-          <asp:TextBox ID="TxtCorreo" runat="server" type="email" class="form-control" placeholder="Ingrese su correo"></asp:TextBox>
+        <%--DIRECCION Y CIUDAD--%>
+        <div class="row">
+          <label class="form-label">Dirección y Ciudad</label>
+          <div class="col-6">
+            <asp:TextBox ID="TxtDireccion" runat="server" type="text" class="form-control" placeholder="Ingrese su Dirección"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="TxtDireccion"></asp:RequiredFieldValidator>
+          </div>
+          <div class="col-6">
+            <asp:TextBox ID="TxtCiudad" runat="server" type="Text" class="form-control" placeholder="Seleccione su Ciudad"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator8" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="TxtCiudad"></asp:RequiredFieldValidator>
+          </div>
         </div>
-        <div class="col-md-6">
-          <label for="TxtDireccion" class="form-label">Dirección</label>
-          <asp:TextBox ID="TxtDireccion" runat="server" type="text" class="form-control" placeholder="Ingrese su dirección"></asp:TextBox>
+        <%--USUARIO, CONTRASEÑA--%>
+        <div class="row">
+          <label class="form-label">Usuario y Contraseña</label>
+          <div class="col-6">
+            <asp:TextBox ID="TxtUser" runat="server" type="text" class="form-control" placeholder="Ingrese su Usuario"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator9" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="TxtUser"></asp:RequiredFieldValidator>
+          </div>
+          <div class="col-6">
+            <asp:TextBox ID="TxtPass" runat="server" type="password" class="form-control" placeholder="Ingrese su Contraseña"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator10" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="TxtPass"></asp:RequiredFieldValidator>
+          </div>
         </div>
-        <div class="col-md-6">
-          <label for="TxtCiudad" class="form-label">Ciudad</label>
-          <asp:TextBox ID="TxtCiudad" runat="server" type="text" class="form-control" placeholder="Ingrese su Ciudad"></asp:TextBox>
-        </div>
-        <div class="col-md-6">
-          <label for="TxtUser" class="form-label">Usuario</label>
-          <asp:TextBox ID="TxtUser" runat="server" type="text" class="form-control" placeholder="Ingrese su usuario"></asp:TextBox>
-        </div>
-        <div class="col-md-6">
-          <label for="TxtPass" class="form-label">Password</label>
-          <asp:TextBox ID="TxtPass" runat="server" type="password" class="form-control" placeholder="Ingrese su contraseña"></asp:TextBox>
-        </div>
-        <div class="col-md-6">
-          <label for="TxtComunidad" class="form-label">Comunidad</label>
-          <asp:DropDownList ID="DropComunidad" runat="server"></asp:DropDownList>
+        <%--REPETIR CONTRASEÑA Y COMUNIDAD--%>
+        <label class="form-label">Repetir Contraseña y Comunidad</label>
+        <div class="row">
+          <div class="col-6">
+            <asp:TextBox ID="TxtRePass" runat="server" type="password" class="form-control" placeholder="Reingrese su Contraseña"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator11" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="TxtRePass"></asp:RequiredFieldValidator>
+          </div>
+          <div class="col-6">
+            <asp:DropDownList ID="DropComunidad" runat="server"></asp:DropDownList>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator12" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="DropComunidad"></asp:RequiredFieldValidator>
+          </div>
         </div>
         <br />
-        <div class="col-12">
-          <asp:Button ID="BtnAgregar" runat="server" Text="Registrar" CssClass="btn btn-primary" />
-          <asp:Label ID="LbRegistro" runat="server" Text="Aqui dira si se registro bien"></asp:Label><br />
-          <a href="ListaUsuarios.aspx">ver listas de usuarios</a>
-        </div>--%>
-        <h4>nuevo formulario</h4>
+        <div class="row">
+          <div class="col-12">
+            <asp:Button ID="BtnAgregar" runat="server" Text="Registrar" CssClass="btn" /><br />
+            <asp:Label ID="LbRegistro" runat="server" Text="Aqui dira si se registro bien"></asp:Label><br />
+            <a href="ListaUsuarios.aspx">ver listas de usuarios</a>
+          </div>
+        </div>
+        <%--TABLA CON LOS DATOS
         <table class="w-100">
           <tr>
             <td colspan="3">Formulario de Registro 2</td>
@@ -155,7 +158,7 @@
               <asp:LinkButton ID="LinkVolver" CausesValidation="false" runat="server" OnClick="LinkVolver_Click">volver</asp:LinkButton>
             </td>
           </tr>
-        </table>
+        </table>--%>
         <br />
       </form>
     </div>

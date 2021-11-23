@@ -18,5 +18,6 @@ namespace SuyaiFinal.Pages
     {
       Response.Redirect("IniciarSesion.aspx");
     }
+
   }
 }
