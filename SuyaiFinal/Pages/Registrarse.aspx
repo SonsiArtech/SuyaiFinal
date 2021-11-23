@@ -37,7 +37,8 @@
           <label for="TxtEdad" class="col-form-label">Edad</label>
           <div class="col-12">
             <asp:TextBox ID="TxtEdad" runat="server" class="form-control" aria-describedby="TxtEdad" type="number" placeholder="Ingrese su Edad"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Campo Requerido" ForeColor="Red" ControlToValidate="TxtEdad"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Campo Requerido" ForeColor="Red" Display="Dynamic" ControlToValidate="TxtEdad"></asp:RequiredFieldValidator>
+             <asp:CompareValidator ID="CompareValidator1" runat="server" Type="Integer" ValueToCompare="12" Operator="GreaterThanEqual" ControlToValidate="TxtEdad" ForeColor="Red" ErrorMessage="Edad incorrecta"></asp:CompareValidator>
           </div>
         </div>
         <%--TELEFONO Y CORREO--%>
@@ -59,7 +60,7 @@
             <asp:TextBox ID="TxtDireccion" runat="server" type="text" class="form-control" placeholder="Ingrese su Dirección"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator7" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="TxtDireccion"></asp:RequiredFieldValidator>
           </div>
-          <div class="col-6">
+          <div class="col-auto">
             <asp:TextBox ID="TxtCiudad" runat="server" type="Text" class="form-control" placeholder="Seleccione su Ciudad"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator8" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="TxtCiudad"></asp:RequiredFieldValidator>
           </div>

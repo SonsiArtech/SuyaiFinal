@@ -80,10 +80,15 @@
     <Content Include="Images\noticia1.jpg" />
     <Content Include="Images\noticia2.jpg" />
     <Content Include="Images\noticia3.jpg" />
+    <Content Include="Pages\Bienvenido.aspx" />
+    <Content Include="Pages\CerrarSesion.aspx" />
     <Content Include="Pages\Contacto.aspx" />
     <Content Include="Pages\ControlAjax.aspx" />
+    <Content Include="Pages\Favoritos.aspx" />
     <Content Include="Pages\index.aspx" />
     <Content Include="Pages\IniciarSesion.aspx" />
+    <Content Include="Pages\Mapa.aspx" />
+    <Content Include="Pages\Perfil.aspx" />
     <Content Include="Pages\Registrarse.aspx" />
     <Content Include="Pages\SobreNosotros.aspx" />
     <Content Include="Pages\VisionMision.aspx" />
@@ -100,6 +105,20 @@
     <Compile Include="Clases\Usuario.cs" />
     <Compile Include="Controller\ComunidadController.cs" />
     <Compile Include="Controller\UsuarioController.cs" />
+    <Compile Include="Pages\Bienvenido.aspx.cs">
+      <DependentUpon>Bienvenido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Bienvenido.aspx.designer.cs">
+      <DependentUpon>Bienvenido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CerrarSesion.aspx.cs">
+      <DependentUpon>CerrarSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CerrarSesion.aspx.designer.cs">
+      <DependentUpon>CerrarSesion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Contacto.aspx.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -114,6 +133,13 @@
     <Compile Include="Pages\ControlAjax.aspx.designer.cs">
       <DependentUpon>ControlAjax.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Favoritos.aspx.cs">
+      <DependentUpon>Favoritos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Favoritos.aspx.designer.cs">
+      <DependentUpon>Favoritos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -127,6 +153,20 @@
     </Compile>
     <Compile Include="Pages\IniciarSesion.aspx.designer.cs">
       <DependentUpon>IniciarSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Mapa.aspx.cs">
+      <DependentUpon>Mapa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Mapa.aspx.designer.cs">
+      <DependentUpon>Mapa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Perfil.aspx.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Perfil.aspx.designer.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Registrarse.aspx.cs">
       <DependentUpon>Registrarse.aspx</DependentUpon>
@@ -157,10 +197,18 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
+    <Compile Include="Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
+    <Content Include="Site2.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

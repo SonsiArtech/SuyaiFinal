@@ -18,5 +18,10 @@ namespace SuyaiFinal.Pages
     {
       Response.Redirect("Registrarse.aspx");
     }
+
+    protected void BtnIngresar_Click(object sender, EventArgs e)
+    {
+      Response.Redirect("Bienvenido.aspx");
+    }
   }
 }
