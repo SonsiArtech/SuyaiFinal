@@ -43,8 +43,6 @@
 margin-top:100px;
 }
 
-
-
 /*Banner, */
 .fondo-banner {
     height: 900px;
@@ -75,8 +73,6 @@ margin-top:100px;
 }
 
 /*footer*/
-
-
 footer {
     height: 160px;
     max-width: 100%;
@@ -117,8 +113,8 @@ footer {
     text-align: center;
     margin: 40px;
     padding: 20px;
-    width: 500px;
-    height: 800px;
+    width: 600px;
+    height: 500px;
     background-color: green;
 }
 

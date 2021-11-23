@@ -7,16 +7,17 @@ using System.Web.UI.WebControls;
 
 namespace SuyaiFinal.Pages
 {
-  public partial class IniciarSesion : System.Web.UI.Page
+  public partial class ControlAjax : System.Web.UI.Page
   {
     protected void Page_Load(object sender, EventArgs e)
     {
 
     }
 
-    protected void LinkRegistrate_Click(object sender, EventArgs e)
+    protected void BtnAccion_Click(object sender, EventArgs e)
     {
-      Response.Redirect("Registrarse.aspx");
+      System.Threading.Thread.Sleep(2000);
+      LbMensaje.Text = DateTime.Now.ToLongDateString() + " " + DateTime.Now.ToShortTimeString();
     }
   }
 }

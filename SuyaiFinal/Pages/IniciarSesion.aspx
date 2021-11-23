@@ -32,7 +32,7 @@
         <button type="submit" class="btn btn-success">Submit</button>
       </form>
     </div>
-    <a href="Registro.aspx" style="float: right">Crear una cuenta</a>
-    <a href="CrearComunidad.aspx" style="float: right">Crear una comunidad</a>
+    <a href="Registrarse.aspx" style="float: right">Registrate!</a>
+    <a href="/CrearComunidad.aspx" style="float: right">Crear una comunidad</a>
   </section>
 </asp:Content>

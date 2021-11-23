@@ -76,12 +76,15 @@
     <Content Include="Images\apple.png" />
     <Content Include="Images\fondoReciclaje.jpg" />
     <Content Include="Images\fondoReciclaje2.jpg" />
+    <Content Include="Images\loadingCat.gif" />
     <Content Include="Images\noticia1.jpg" />
     <Content Include="Images\noticia2.jpg" />
     <Content Include="Images\noticia3.jpg" />
     <Content Include="Pages\Contacto.aspx" />
+    <Content Include="Pages\ControlAjax.aspx" />
     <Content Include="Pages\index.aspx" />
     <Content Include="Pages\IniciarSesion.aspx" />
+    <Content Include="Pages\Registrarse.aspx" />
     <Content Include="Pages\SobreNosotros.aspx" />
     <Content Include="Pages\VisionMision.aspx" />
     <Content Include="Web.config" />
@@ -104,6 +107,13 @@
     <Compile Include="Pages\Contacto.aspx.designer.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ControlAjax.aspx.cs">
+      <DependentUpon>ControlAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ControlAjax.aspx.designer.cs">
+      <DependentUpon>ControlAjax.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -117,6 +127,13 @@
     </Compile>
     <Compile Include="Pages\IniciarSesion.aspx.designer.cs">
       <DependentUpon>IniciarSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Registrarse.aspx.cs">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Registrarse.aspx.designer.cs">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\SobreNosotros.aspx.cs">
       <DependentUpon>SobreNosotros.aspx</DependentUpon>
