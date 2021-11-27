@@ -29,8 +29,7 @@
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
-        <button type="submit">Submit</button>
-        <asp:Button ID="BtnIngresar"  class="btn btn-success" runat="server" Text="Ingresar" OnClick="BtnIngresar_Click" />
+        <asp:Button ID="BtnIngresar"  class="btn" runat="server" Text="Ingresar" OnClick="BtnIngresar_Click" />
       </form>
     </div>
     <a href="Registrarse.aspx" style="float: right">Registrate!</a>

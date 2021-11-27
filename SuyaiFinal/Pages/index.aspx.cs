@@ -13,5 +13,10 @@ namespace SuyaiFinal
         {
 
         }
+
+    protected void LnkLeer_Click(object sender, EventArgs e)
+    {
+      Response.Redirect("SobreNosotros.aspx");
     }
+  }
 }

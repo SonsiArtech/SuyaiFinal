@@ -14,16 +14,13 @@
     </div>
     <div class="parrafo">
       <p class="poema">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sollicitudin viverra elementum. Cras condimentum nisi ut elit viverra convallis. 
-                    <br />
-        Suspendisse nisi ligula, tincidunt ac orci eget, interdum vulputate dolor. Donec at aliquet lacus, eu imperdiet tortor. Sed vitae mauris mauris.
-                    <br />
-        Proin et tristique nibh, dictum tincidunt libero. Sed rhoncus feugiat ipsum vel euismod. Proin ut placerat est. Nulla vel iaculis mi. Mauris ut
-                    <br />
-        suscipit erat. Suspendisse potenti. Fusce porttitor velit sit amet arcu sollicitudin faucibus. In egestas feugiat neque non suscipit. Phasellus
-                    <br />
-        eu volutpat risus, et ornare ex. Vestibulum non dolor elementum ipsum sodales sodales non in nibh.<br />
+        Somos un grupo de personas interesadas en cuidar el medio ambiente, por ello queremos concientizar a la población sobre lo importante<br />
+        que es el reciclar. Para esto creamos SUYAI Reciclaje, para ayudar a la comunidad que nos quiera apoyar con este lindo proyecto.<br />
+        Nuestra página, además de apoyar y hacer conciencia a la población sobre el reciclaje, pondremos a disposición lugares para que<br />
+        se puedan comprar productos a granel, ya que con este método de reciclaje se ayuda a reducir el consumo de plástico<br />
+        en nuestro país y en el mundo.
       </p>
+      <asp:LinkButton ID="LnkLeer" runat="server" CssClass="btn btn-success" ForeColor="White" BackColor="#009933" OnClick="LnkLeer_Click">Leer Más</asp:LinkButton>
     </div>
   </section>
   <section class="fondo-banner">

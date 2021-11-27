@@ -1,169 +1,176 @@
 ﻿.fondo {
-    height: 120px;
-    max-width: 100%;
-    background-image: url("/images/fondoReciclaje.jpg");
-    background-color: green;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  height: 120px;
+  max-width: 100%;
+  background-image: url("/images/fondoReciclaje.jpg");
+  background-color: green;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .titulo {
-    color: white;
-    font-size: 80px;
-    font-weight: 500;
-    text-align: center;
+  color: white;
+  font-size: 80px;
+  font-weight: 500;
+  text-align: center;
 }
 
 /*Banner principal. En esta seccion ira todo lo del que se repite en inicio, sobre nosotros, visión y misión*/
 .banner-principal {
-    height: 460px;
-    max-width: 100%;
-    background-color: white;
+  height: 460px;
+  max-width: 100%;
+  background-color: white;
 }
 
 .titulo-dos {
-    color: black;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    text-align: center;
+  color: black;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .parrafo {
-    text-align: center;
-    font-style: italic;
-    line-height: 20pt;
-    font-size: 12pt;
-    color: #222;
+  text-align: center;
+  font-style: italic;
+  line-height: 20pt;
+  font-size: 12pt;
+  color: #222;
 }
 
 .parrafo .poema {
-margin-top:100px;
+  margin-top: 60px;
 }
 
 /*Banner, */
 .fondo-banner {
-    height: 900px;
-    max-width: 100%;
-    background-image: url("/images/fondoReciclaje2.jpg");
-    background-color: green;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  height: 900px;
+  max-width: 100%;
+  background-image: url("/images/fondoReciclaje2.jpg");
+  background-color: green;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-secundario {
+  height: 500px;
+  width: 100%;
+  background-color: white;
+  margin-top: 200px;
 }
 
 .contenedor {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .color-blanco {
-    color: white;
+  color: white;
 }
 
 .carrusel-banner {
-    flex-direction: column;
-    height: 360px;
-    width: 500px;
+  flex-direction: column;
+  height: 360px;
+  width: 500px;
 }
 
 /*footer*/
 footer {
-    height: 160px;
-    max-width: 100%;
+  height: 160px;
+  max-width: 100%;
 }
 
 .alinear {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .caja {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 33.3%;
-    height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 33.3%;
+  height: 160px;
 }
 
 .caja2 {
-    padding-top: 5px;
-    text-align: center;
-    width: 33.3%;
-    height: 160px;
+  padding-top: 5px;
+  text-align: center;
+  width: 33.3%;
+  height: 160px;
 }
 
-    .caja2 a {
-        text-decoration: none;
-        color: white;
-    }
+  .caja2 a {
+    text-decoration: none;
+    color: white;
+  }
 
 /*aqui va todo lo de registrarse*/
 
 .caja-iniciar-registro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 40px;
-    padding: 20px;
-    width: 800px;
-    height: 800px;
-    background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 40px;
+  padding: 20px;
+  width: 800px;
+  height: 800px;
+  background-color: green;
 }
 
 /*CSS para Iniciar sesion y pagina de contacto*/
 
 .banner-pequeño {
-    height: 80px;
-    max-width: 100%;
-    background-color: white;
-    display: inline;
+  height: 80px;
+  max-width: 100%;
+  background-color: white;
+  display: inline;
 }
 
-.caja-iniciar-sesion{
-    margin: 40px;
-    padding: 20px;
-    width: 600px;
-    height:400px;
-    background-color: green;
+.caja-iniciar-sesion {
+  margin: 40px;
+  padding: 20px;
+  width: 600px;
+  height: 400px;
+  background-color: green;
 }
 
 input[type="submit"] {
-    background: linear-gradient(#FFF, #FFF);
-    border: 0;
-    color: black;
-    opacity: 0.8;
-    cursor: pointer;
-    font-family: Arial;
-    border-radius: 20px;
-    margin-bottom: 0;
+  background: linear-gradient(#FFF, #FFF);
+  border: 0;
+  color: black;
+  opacity: 0.8;
+  cursor: pointer;
+  font-family: Arial;
+  border-radius: 20px;
+  margin-bottom: 0;
 }
 
-input[type="submit"]:hover {
+  input[type="submit"]:hover {
     opacity: 1;
-}
+  }
 
-input[type="submit"]:active {
+  input[type="submit"]:active {
     transform: scale(0.95);
-}
+  }
 
 @media (max-width:768px) {
-    form {
-        width: 100%;
-    }
+  form {
+    width: 100%;
+  }
 }
 
 @media (max-width:480px) {
-    form {
-        width: 100%;
-    }
+  form {
+    width: 100%;
+  }
 }
 
 .orange {
-    background-color: #fd7e14;
+  background-color: #fd7e14;
 }

@@ -75,7 +75,7 @@
           </div>
           <div class="col-6">
             <asp:TextBox ID="TxtPass" runat="server" type="password" class="form-control" placeholder="Ingrese su Contraseña"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator10" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="TxtPass"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator10" ForeColor="Red" Display="Dynamic" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="TxtPass"></asp:RequiredFieldValidator>
             <asp:CompareValidator ID="CompareValidator2" runat="server" ControlToValidate="TxtPass" ControlToCompare="TxtRePass" Operator="Equal" ErrorMessage="Contraseña no coincide" ForeColor="Red" Display="Dynamic"></asp:CompareValidator>
           </div>
         </div>
@@ -84,7 +84,7 @@
         <div class="row">
           <div class="col-6">
             <asp:TextBox ID="TxtRePass" runat="server" type="password" class="form-control" placeholder="Reingrese su Contraseña"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator11" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="TxtRePass"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator11" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" Display="Dynamic" ControlToValidate="TxtRePass"></asp:RequiredFieldValidator>
             <asp:CompareValidator ID="CompareValidator3" runat="server" ControlToValidate="TxtRePass" ControlToCompare="TxtPass" Operator="Equal" ErrorMessage="Contraseña no coincide" ForeColor="Red" Display="Dynamic"></asp:CompareValidator>
           </div>
           <div class="col-6">
