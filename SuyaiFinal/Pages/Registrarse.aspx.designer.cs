@@ -132,6 +132,15 @@ namespace SuyaiFinal.Pages
     protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
 
     /// <summary>
+    /// Control RegularExpressionValidator1.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+
+    /// <summary>
     /// Control TxtDireccion.
     /// </summary>
     /// <remarks>
@@ -204,6 +213,15 @@ namespace SuyaiFinal.Pages
     protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator10;
 
     /// <summary>
+    /// Control CompareValidator2.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.CompareValidator CompareValidator2;
+
+    /// <summary>
     /// Control TxtRePass.
     /// </summary>
     /// <remarks>
@@ -220,6 +238,15 @@ namespace SuyaiFinal.Pages
     /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     /// </remarks>
     protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator11;
+
+    /// <summary>
+    /// Control CompareValidator3.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.CompareValidator CompareValidator3;
 
     /// <summary>
     /// Control DropComunidad.

@@ -38,7 +38,7 @@
           <div class="col-12">
             <asp:TextBox ID="TxtEdad" runat="server" class="form-control" aria-describedby="TxtEdad" type="number" placeholder="Ingrese su Edad"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Campo Requerido" ForeColor="Red" Display="Dynamic" ControlToValidate="TxtEdad"></asp:RequiredFieldValidator>
-             <asp:CompareValidator ID="CompareValidator1" runat="server" Type="Integer" ValueToCompare="12" Operator="GreaterThanEqual" ControlToValidate="TxtEdad" ForeColor="Red" ErrorMessage="Edad incorrecta"></asp:CompareValidator>
+            <asp:CompareValidator ID="CompareValidator1" runat="server" Type="Integer" ValueToCompare="12" Operator="GreaterThanEqual" ControlToValidate="TxtEdad" ForeColor="Red" ErrorMessage="Edad incorrecta"></asp:CompareValidator>
           </div>
         </div>
         <%--TELEFONO Y CORREO--%>
@@ -51,6 +51,7 @@
           <div class="col-6">
             <asp:TextBox ID="TxtCorreo" runat="server" type="mail" class="form-control" placeholder="Ingrese su Correo"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator6" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="TxtCorreo"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" Display="Dynamic" runat="server" ControlToValidate="TxtCorreo" ForeColor="Red" ErrorMessage="Correo invalido" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
           </div>
         </div>
         <%--DIRECCION Y CIUDAD--%>
@@ -75,6 +76,7 @@
           <div class="col-6">
             <asp:TextBox ID="TxtPass" runat="server" type="password" class="form-control" placeholder="Ingrese su Contraseña"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator10" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="TxtPass"></asp:RequiredFieldValidator>
+            <asp:CompareValidator ID="CompareValidator2" runat="server" ControlToValidate="TxtPass" ControlToCompare="TxtRePass" Operator="Equal" ErrorMessage="Contraseña no coincide" ForeColor="Red" Display="Dynamic"></asp:CompareValidator>
           </div>
         </div>
         <%--REPETIR CONTRASEÑA Y COMUNIDAD--%>
@@ -83,6 +85,7 @@
           <div class="col-6">
             <asp:TextBox ID="TxtRePass" runat="server" type="password" class="form-control" placeholder="Reingrese su Contraseña"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator11" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="TxtRePass"></asp:RequiredFieldValidator>
+            <asp:CompareValidator ID="CompareValidator3" runat="server" ControlToValidate="TxtRePass" ControlToCompare="TxtPass" Operator="Equal" ErrorMessage="Contraseña no coincide" ForeColor="Red" Display="Dynamic"></asp:CompareValidator>
           </div>
           <div class="col-6">
             <asp:DropDownList ID="DropComunidad" runat="server"></asp:DropDownList>
@@ -97,69 +100,6 @@
             <a href="ListaUsuarios.aspx">ver listas de usuarios</a>
           </div>
         </div>
-        <%--TABLA CON LOS DATOS
-        <table class="w-100">
-          <tr>
-            <td colspan="3">Formulario de Registro 2</td>
-          </tr>
-          <tr>
-            <td class="auto-style1">Nombre</td>
-            <td class="auto-style2">
-              <asp:TextBox ID="TxtNom" runat="server"></asp:TextBox>
-            </td>
-            <td class="auto-style5">
-              <asp:RequiredFieldValidator ID="RequiredFieldValidator1" Display="Dynamic" runat="server" ErrorMessage="Campo Requerido" ForeColor="Red" ControlToValidate="TxtNom"></asp:RequiredFieldValidator>
-            </td>
-          </tr>
-          <tr>
-            <td class="auto-style1">Correo</td>
-            <td class="auto-style2">
-              <asp:TextBox ID="TxtCorr" runat="server"></asp:TextBox>
-            </td>
-            <td class="auto-style5">
-              <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" Display="Dynamic" ErrorMessage="Campo Requerido" ForeColor="Red" ControlToValidate="TxtCorr"></asp:RequiredFieldValidator>
-              <asp:RegularExpressionValidator ID="RegularExpressionValidator1" Display="Dynamic" runat="server" ControlToValidate="TxtCorr" ForeColor="Red" ErrorMessage="Correo invalido" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
-            </td>
-          </tr>
-          <tr>
-            <td class="auto-style3">Edad:</td>
-            <td class="auto-style4">
-              <asp:TextBox ID="TxtEdad" runat="server" TextMode="Number"></asp:TextBox>
-            </td>
-            <td class="auto-style6">
-              <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" Display="Dynamic" ErrorMessage="Campo Requerido" ForeColor="Red" ControlToValidate="TxtEdad"></asp:RequiredFieldValidator>
-              <asp:CompareValidator ID="CompareValidator1" runat="server" Type="Integer" Display="Dynamic" ValueToCompare="12" Operator="GreaterThan" ControlToValidate="TxtEdad" ForeColor="Red" ErrorMessage="Edad incorrecta"></asp:CompareValidator>
-            </td>
-          </tr>
-          <tr>
-            <td class="auto-style1">Contraseña</td>
-            <td class="auto-style2">
-              <asp:TextBox ID="TxtContraseña" runat="server" TextMode="Password"></asp:TextBox>
-            </td>
-            <td class="auto-style5">
-              <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Campo Requerido" Display="Dynamic" ForeColor="Red" ControlToValidate="TxtContraseña"></asp:RequiredFieldValidator>
-              <asp:CompareValidator ID="CompareValidator2" runat="server" ControlToValidate="TxtContraseña" ControlToCompare="TxtReContraseña" Operator="Equal" ErrorMessage="Contraseña no coincide" ForeColor="Red" Display="Dynamic"></asp:CompareValidator>
-            </td>
-          </tr>
-          <tr>
-            <td class="auto-style1">Repetir Contraseña</td>
-            <td class="auto-style2">
-              <asp:TextBox ID="TxtReContraseña" runat="server" TextMode="Password"></asp:TextBox>
-            </td>
-            <td class="auto-style5">
-              <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" Display="Dynamic" ErrorMessage="Campo Requerido" ForeColor="Red" ControlToValidate="TxtReContraseña"></asp:RequiredFieldValidator>
-              <asp:CompareValidator ID="CompareValidator3" runat="server" ControlToValidate="TxtReContraseña" ControlToCompare="TxtContraseña" Operator="Equal" ErrorMessage="Contraseña no coincide" ForeColor="Red" Display="Dynamic"></asp:CompareValidator>
-            </td>
-          </tr>
-          <tr>
-            <td class="auto-style1">
-              <asp:Button ID="BtnRegistro" runat="server" Text="Registrar" />
-            </td>
-            <td colspan="2">
-              <asp:LinkButton ID="LinkVolver" CausesValidation="false" runat="server" OnClick="LinkVolver_Click">volver</asp:LinkButton>
-            </td>
-          </tr>
-        </table>--%>
         <br />
       </form>
     </div>
