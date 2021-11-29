@@ -88,6 +88,7 @@ footer {
   flex-direction: row;
 }
 
+/*Se usa en el footer*/
 .caja {
   display: flex;
   align-items: center;
@@ -96,18 +97,18 @@ footer {
   width: 33.3%;
   height: 160px;
 }
-
+/*Se usa en el footer*/
 .caja2 {
   padding-top: 5px;
   text-align: center;
   width: 33.3%;
   height: 160px;
 }
-
-  .caja2 a {
-    text-decoration: none;
-    color: white;
-  }
+  /*Se usa en el footer*/
+.caja2 a {
+  text-decoration: none;
+  color: white;
+}
 
 /*aqui va todo lo de registrarse*/
 
@@ -172,5 +173,40 @@ input[type="submit"] {
 }
 
 .orange {
-  background-color: #fd7e14;
+  background-color: #fd9742;
+}
+
+.banner-grande {
+  height: 600px;
+  width: 100%;
+  background-color: white;
+}
+.banner-favoritos {
+  height: 700px;
+  width: 100%;
+  background-color: white;
+}
+/*PERFIL*/
+
+.caja-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px 0 20px 0;
+  width: 100%;
+  height: 700px;
+}
+
+.avatar {
+  background-color: blue;
+  background-image: url("/images/perfil.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 50%;
+  -webkit-border-radius: 50%;
+  border: 3px solid black;
+  height: 200px;
+  width: 200px;
 }

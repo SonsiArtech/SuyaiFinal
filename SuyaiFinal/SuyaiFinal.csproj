@@ -80,6 +80,7 @@
     <Content Include="Images\noticia1.jpg" />
     <Content Include="Images\noticia2.jpg" />
     <Content Include="Images\noticia3.jpg" />
+    <Content Include="Images\perfil.jpg" />
     <Content Include="Pages\Bienvenido.aspx" />
     <Content Include="Pages\CerrarSesion.aspx" />
     <Content Include="Pages\Contacto.aspx" />
