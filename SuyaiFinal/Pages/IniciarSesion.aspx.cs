@@ -14,14 +14,14 @@ namespace SuyaiFinal.Pages
 
     }
 
-    protected void LinkRegistrate_Click(object sender, EventArgs e)
-    {
-      Response.Redirect("Registrarse.aspx");
-    }
-
     protected void BtnIngresar_Click(object sender, EventArgs e)
     {
       Response.Redirect("Bienvenido.aspx");
+    }
+
+    protected void LnkRegistrarse_Click(object sender, EventArgs e)
+    {
+      Response.Redirect("Registrarse.aspx");
     }
   }
 }

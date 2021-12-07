@@ -85,6 +85,7 @@
     <Content Include="Pages\CerrarSesion.aspx" />
     <Content Include="Pages\Contacto.aspx" />
     <Content Include="Pages\ControlAjax.aspx" />
+    <Content Include="Pages\CrearComunidad.aspx" />
     <Content Include="Pages\Favoritos.aspx" />
     <Content Include="Pages\index.aspx" />
     <Content Include="Pages\IniciarSesion.aspx" />
@@ -104,6 +105,7 @@
     <Compile Include="Clases\Regiones.cs" />
     <Compile Include="Clases\TiendaGranel.cs" />
     <Compile Include="Clases\Usuario.cs" />
+    <Compile Include="Controller\ComunaController.cs" />
     <Compile Include="Controller\ComunidadController.cs" />
     <Compile Include="Controller\UsuarioController.cs" />
     <Compile Include="Pages\Bienvenido.aspx.cs">
@@ -133,6 +135,13 @@
     </Compile>
     <Compile Include="Pages\ControlAjax.aspx.designer.cs">
       <DependentUpon>ControlAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CrearComunidad.aspx.cs">
+      <DependentUpon>CrearComunidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CrearComunidad.aspx.designer.cs">
+      <DependentUpon>CrearComunidad.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Favoritos.aspx.cs">
       <DependentUpon>Favoritos.aspx</DependentUpon>

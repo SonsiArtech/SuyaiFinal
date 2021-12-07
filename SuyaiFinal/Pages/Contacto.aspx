@@ -9,37 +9,29 @@
     </div>
   </section>
   <section class="fondo-banner">
-    <form action="submeter-formulario.php" method="post">
-      <p>
-        <label for="nombre" class="colocar_nombre">
-          Nombre<span class="obligatorio">*</span>
-        </label>
-        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-      </p>
-      <p>
-        <label for="email" class="colocar_email">
-          Email<span class="obligatorio">*</span>
-        </label>
-        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-      </p>
-      <p>
-        <label for="telefone" class="colocar_telefono">
-          Teléfono
-        </label>
-        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-      </p>
-      <p>
-        <label for="mensaje" class="colocar_mensaje">
-          Mensaje<span class="obligatorio">*</span>
-        </label>
-        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
-      </p>
-      <button type="submit" name="enviar_formulario" id="enviar">
-        <p>Enviar</p>
-      </button>
-      <p class="aviso">
-        <span class="obligatorio">* </span>los campos son obligatorios.
-      </p>
-    </form>
+    <div class="caja-contacto">
+      <%--NOMBRE DE CONTACTO--%>
+      <div class="mb-12">
+        <label for="TxtNombreContacto" class="form-label">Nombre</label>
+        <asp:TextBox ID="TxtNombreContacto" CssClass="form-control" placeholder="Ej: Raul Mendez" runat="server"></asp:TextBox>
+      </div>
+      <%--CORREO DE CONTACTO--%>
+      <div class="mb-12">
+        <label for="TxtCorreoContacto" class="form-label">Correo</label>
+        <asp:TextBox ID="TxtCorreoContacto" class="form-control" placeholder="Ej: nombre@gmail.com" runat="server"></asp:TextBox>
+      </div>
+      <%--ASUNTO DE CONTACTO--%>
+      <div class="mb-12">
+        <label for="TxtAsuntoContacto" class="form-label">Asunto</label>
+        <asp:TextBox ID="TxtAsuntoContacto" class="form-control" placeholder="Ej: Importante" runat="server"></asp:TextBox>
+      </div>
+      <%--MENSAJE DE CONTACTO--%>
+      <div class="mb-12">
+        <label for="TxtContacto" class="form-label">Mensaje</label>
+        <asp:TextBox ID="TextBox1" class="form-control" placeholder="Ej: Lorem Ipsum......" runat="server" Rows="3" TextMode="MultiLine"></asp:TextBox>
+      </div>
+      <br />
+      <asp:Button ID="btnEnviarContacto" CssClass="btn" runat="server" Text="Enviar" />
+    </div>
   </section>
 </asp:Content>

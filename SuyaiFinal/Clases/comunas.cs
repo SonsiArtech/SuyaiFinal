@@ -7,14 +7,14 @@ namespace SuyaiFinal.Clases
 {
   public class Comunas
   {
-    private int id;
+    private string id;
     private string nombre;
 
     public Comunas()
     {
     }
 
-    public Comunas(int id, string nombre)
+    public Comunas(string id, string nombre)
     {
       this.id = id;
       this.nombre = nombre;
@@ -27,7 +27,7 @@ namespace SuyaiFinal.Clases
     }
 
 
-    public int Id
+    public string Id
     {
       get { return id; }
       set { id = value; }

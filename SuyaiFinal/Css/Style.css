@@ -126,6 +126,14 @@ footer {
 
 /*CSS para Iniciar sesion y pagina de contacto*/
 
+.caja-contacto {
+  margin: 40px;
+  padding: 20px;
+  width: 600px;
+  height: 450px;
+  background-color: green;
+}
+
 .banner-pequeño {
   height: 80px;
   max-width: 100%;

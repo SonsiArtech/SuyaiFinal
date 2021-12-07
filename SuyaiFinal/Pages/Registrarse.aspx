@@ -18,6 +18,7 @@
           <div class="col-12">
             <asp:TextBox ID="TxtRut" runat="server" class="form-control" aria-describedby="TxtRut" type="text" placeholder="Ingrese su Rut"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Campo Requerido" ForeColor="Red" ControlToValidate="TxtRut"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" Display="Dynamic" runat="server" ControlToValidate="TxtRut" ForeColor="Red" ErrorMessage="Formato de RUT invalido" ValidationExpression="^(\d{2}\.\d{3}\.\d{3}-)([a-zA-Z]{1}$|\d{1}$)"></asp:RegularExpressionValidator>
           </div>
         </div>
         <%--NOMBRE Y APELLIDO--%>
@@ -62,8 +63,8 @@
             <asp:RequiredFieldValidator ID="RequiredFieldValidator7" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="TxtDireccion"></asp:RequiredFieldValidator>
           </div>
           <div class="col-auto">
-            <asp:TextBox ID="TxtCiudad" runat="server" type="Text" class="form-control" placeholder="Seleccione su Ciudad"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator8" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="TxtCiudad"></asp:RequiredFieldValidator>
+            <asp:DropDownList ID="DropComunas" runat="server" placeholder="Seleccione su Ciudad"></asp:DropDownList>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator8" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="DropComunas"></asp:RequiredFieldValidator>
           </div>
         </div>
         <%--USUARIO, CONTRASEÑA--%>
@@ -95,9 +96,9 @@
         <br />
         <div class="row">
           <div class="col-12">
-            <asp:Button ID="BtnAgregar" runat="server" Text="Registrar" CssClass="btn" /><br />
+            <asp:Button ID="BtnAgregar" runat="server" Text="Registrar" CssClass="btn" OnClick="BtnAgregar_Click" /><br />
             <asp:Label ID="LbRegistro" runat="server" Text="Aqui dira si se registro bien"></asp:Label><br />
-            <a href="ListaUsuarios.aspx">ver listas de usuarios</a>
+            <asp:LinkButton ID="LnkCrearComunidad" runat="server" CausesValidation="false" ForeColor="White" OnClick="LnkCrearComunidad_Click">Crear Nueva comunidad</asp:LinkButton>
           </div>
         </div>
         <br />

@@ -33,6 +33,15 @@ namespace SuyaiFinal.Pages
     protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
 
     /// <summary>
+    /// Control RegularExpressionValidator2.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
+
+    /// <summary>
     /// Control TxtNombre.
     /// </summary>
     /// <remarks>
@@ -159,13 +168,13 @@ namespace SuyaiFinal.Pages
     protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator7;
 
     /// <summary>
-    /// Control TxtCiudad.
+    /// Control DropComunas.
     /// </summary>
     /// <remarks>
     /// Campo generado automáticamente.
     /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.TextBox TxtCiudad;
+    protected global::System.Web.UI.WebControls.DropDownList DropComunas;
 
     /// <summary>
     /// Control RequiredFieldValidator8.
@@ -283,5 +292,14 @@ namespace SuyaiFinal.Pages
     /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     /// </remarks>
     protected global::System.Web.UI.WebControls.Label LbRegistro;
+
+    /// <summary>
+    /// Control LnkCrearComunidad.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.LinkButton LnkCrearComunidad;
   }
 }

@@ -31,8 +31,10 @@
         </div>
         <asp:Button ID="BtnIngresar"  class="btn" runat="server" Text="Ingresar" OnClick="BtnIngresar_Click" />
       </form>
+      <br />
+      <br />
+      <br />
+      <asp:LinkButton ID="LnkRegistrarse" runat="server" ForeColor="White" OnClick="LnkRegistrarse_Click">Registrarse</asp:LinkButton>
     </div>
-    <a href="Registrarse.aspx" style="float: right">Registrate!</a>
-    <a href="/CrearComunidad.aspx" style="float: right">Crear una comunidad</a>
   </section>
 </asp:Content>

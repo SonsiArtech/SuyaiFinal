@@ -11,52 +11,61 @@ namespace SuyaiFinal.Pages
 {
 
 
-  public partial class Contacto
+  public partial class CrearComunidad
   {
 
     /// <summary>
-    /// Control TxtNombreContacto.
+    /// Control TxtId.
     /// </summary>
     /// <remarks>
     /// Campo generado automáticamente.
     /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.TextBox TxtNombreContacto;
+    protected global::System.Web.UI.WebControls.TextBox TxtId;
 
     /// <summary>
-    /// Control TxtCorreoContacto.
+    /// Control TxtNombre.
     /// </summary>
     /// <remarks>
     /// Campo generado automáticamente.
     /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.TextBox TxtCorreoContacto;
+    protected global::System.Web.UI.WebControls.TextBox TxtNombre;
 
     /// <summary>
-    /// Control TxtAsuntoContacto.
+    /// Control BtnRegistrarComunidad.
     /// </summary>
     /// <remarks>
     /// Campo generado automáticamente.
     /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.TextBox TxtAsuntoContacto;
+    protected global::System.Web.UI.WebControls.Button BtnRegistrarComunidad;
 
     /// <summary>
-    /// Control TextBox1.
+    /// Control LbResultado.
     /// </summary>
     /// <remarks>
     /// Campo generado automáticamente.
     /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.TextBox TextBox1;
+    protected global::System.Web.UI.WebControls.Label LbResultado;
 
     /// <summary>
-    /// Control btnEnviarContacto.
+    /// Control LnkVer.
     /// </summary>
     /// <remarks>
     /// Campo generado automáticamente.
     /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.Button btnEnviarContacto;
+    protected global::System.Web.UI.WebControls.LinkButton LnkVer;
+
+    /// <summary>
+    /// Control LnkVolver.
+    /// </summary>
+    /// <remarks>
+    /// Campo generado automáticamente.
+    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.LinkButton LnkVolver;
   }
 }

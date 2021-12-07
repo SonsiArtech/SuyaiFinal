@@ -13,7 +13,7 @@ namespace SuyaiFinal.Controller
     
     
     //Metodos para agregar usuarios
-    public static string AddUsuario(string rut, string nomb, string ape , string tele, string corr, string dire, string ciud, 
+    public static string AddUsuario(string rut, string nomb, string eda , string ape , string tele, string corr, string dire, string ciud, 
       string user,string pass, string idComunidad)
     {
 
@@ -26,6 +26,7 @@ namespace SuyaiFinal.Controller
           Rut = rut,
           Nombre = nomb,
           Apellido = ape,
+          Edad = int.Parse(eda),
           Telefono = int.Parse(tele),
           Correo = corr,
           Direccion = dire,
