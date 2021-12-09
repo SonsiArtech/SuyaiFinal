@@ -2,18 +2,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
   <style>
     /* PROXIMAMENTE SERVIRA PARA INICIAR SESION*/
-
     #gato{
-      position:fixed;
-      height:100%;
-      width:100%;
-      border: 1px solid red;
-      z-index:10001;
-      background-image: url("../Images/loadingCat.gif");
-      background-repeat: no-repeat;
+      
     }
   </style>
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
   <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
@@ -24,7 +18,7 @@
   </asp:UpdatePanel>
   <asp:UpdateProgress ID="UpdateProgress1" runat="server">
     <ProgressTemplate>
-      <div id="gato">
+      <div id="gatito">
 
       </div>
     </ProgressTemplate>

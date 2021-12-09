@@ -13,5 +13,10 @@ namespace SuyaiFinal.Pages
     {
 
     }
+
+    protected void btnEnviarContacto_Click(object sender, EventArgs e)
+    {
+      System.Threading.Thread.Sleep(4000);
+    }
   }
 }

@@ -145,7 +145,7 @@ footer {
   margin: 40px;
   padding: 20px;
   width: 600px;
-  height: 400px;
+  height: 300px;
   background-color: green;
 }
 
@@ -217,4 +217,15 @@ input[type="submit"] {
   border: 3px solid black;
   height: 200px;
   width: 200px;
+}
+
+#gatito {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  height: 100%;
+  width: 100%;
+  background-image: url("../Images/loadingCat.gif");
+  background-repeat: no-repeat;
+  background-position: center;
 }

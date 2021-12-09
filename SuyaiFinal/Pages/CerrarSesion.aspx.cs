@@ -11,7 +11,9 @@ namespace SuyaiFinal.Pages
   {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+      Session["login"] = null;
+      System.Threading.Thread.Sleep(2000);
+      Response.Redirect("IniciarSesion.aspx");
     }
   }
 }

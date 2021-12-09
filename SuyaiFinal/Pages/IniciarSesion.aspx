@@ -16,25 +16,34 @@
   <section class="fondo-banner">
     <div class="caja-iniciar-sesion">
       <form>
+        <%--USUARIO Y CONTRASEÑA--%>
         <div class="mb-6">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <label for="TxtUser" class="form-label">Usuario</label>
+          <asp:TextBox ID="TxtUser" runat="server" class="form-control"></asp:TextBox>
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <label for="TxtPass" class="form-label">Contraseña</label>
+          <asp:TextBox ID="TxtPass" runat="server" class="form-control" TextMode="Password"></asp:TextBox>
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <asp:Button ID="BtnIngresar"  class="btn" runat="server" Text="Ingresar" OnClick="BtnIngresar_Click" />
+        <%--BOTON E IMAGEN DE CARGA--%>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+          <ContentTemplate>
+            <asp:Button ID="BtnIngresar" class="btn" runat="server" Text="Ingresar" OnClick="BtnIngresar_Click" />
+            <asp:Label ID="lbMensaje" runat="server" Text=""></asp:Label>
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+          </ContentTemplate>
+        </asp:UpdatePanel>
+        <asp:UpdateProgress ID="UpdateProgress1" runat="server">
+          <ProgressTemplate>
+            <div id="gatito">
+            </div>
+          </ProgressTemplate>
+        </asp:UpdateProgress>
       </form>
       <br />
       <br />
-      <br />
       <asp:LinkButton ID="LnkRegistrarse" runat="server" ForeColor="White" OnClick="LnkRegistrarse_Click">Registrarse</asp:LinkButton>
+      <br />
     </div>
   </section>
 </asp:Content>

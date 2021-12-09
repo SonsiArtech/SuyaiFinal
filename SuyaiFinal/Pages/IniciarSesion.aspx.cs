@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+﻿using SuyaiFinal.Controller;
+using System;
+using SuyaiFinal.Clases;
 
 namespace SuyaiFinal.Pages
 {
@@ -11,12 +8,23 @@ namespace SuyaiFinal.Pages
   {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+      UsuarioController.precargarUsuarios();
     }
 
     protected void BtnIngresar_Click(object sender, EventArgs e)
     {
-      Response.Redirect("Bienvenido.aspx");
+      Usuario usr = UsuarioController.login(TxtUser.Text, TxtPass.Text);
+      System.Threading.Thread.Sleep(2000);
+      if (usr != null)
+      {
+        Session["login"] = usr;
+        Response.Redirect("Bienvenido.aspx");
+      }
+      else
+      {
+        lbMensaje.Text = "Usuario o contraseña invalidos";
+        Session["login"] = null;
+      }
     }
 
     protected void LnkRegistrarse_Click(object sender, EventArgs e)

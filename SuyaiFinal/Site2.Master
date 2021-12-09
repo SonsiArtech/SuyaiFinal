@@ -32,7 +32,7 @@
                 <asp:MenuItem NavigateUrl="~/Pages/Mapa.aspx" Text="Mapa"></asp:MenuItem>
                 <asp:MenuItem NavigateUrl="~/Pages/Favoritos.aspx" Text="Favoritos"></asp:MenuItem>
                 <asp:MenuItem NavigateUrl="~/Pages/Perfil.aspx" Text="Perfil"></asp:MenuItem>
-                <asp:MenuItem NavigateUrl="~/Pages/Index.aspx" Text="Cerrar Sesión"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Pages/CerrarSesion.aspx" Text="Cerrar Sesión"></asp:MenuItem>
               </Items>
               <StaticHoverStyle BackColor="#FF6600" ForeColor="White" />
               <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />

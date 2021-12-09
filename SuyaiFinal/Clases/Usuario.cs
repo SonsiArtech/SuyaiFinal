@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace SuyaiFinal.Clases
+﻿namespace SuyaiFinal.Clases
 {
   public class Usuario : Comunidad
   {
@@ -19,13 +14,15 @@ namespace SuyaiFinal.Clases
     private string user;
     private string pass;
     private string comunidad;
+    private Rol userRol;
 
     public Usuario()
     {
 
     }
 
-    public Usuario(string rut, string nombre, string apellido, int edad, int telefono, string correo, string direccion, string ciudad, string user, string pass, string comunidad)
+    public Usuario(string rut, string nombre, string apellido, int edad, int telefono, string correo, string direccion, string ciudad,
+      string user, string pass, string comunidad, Rol userRol)
     {
       this.rut = rut;
       this.nombre = nombre;
@@ -38,6 +35,13 @@ namespace SuyaiFinal.Clases
       this.user = user;
       this.pass = pass;
       this.comunidad = comunidad;
+      this.userRol = userRol;
+    }
+
+    public Rol UserRol
+    {
+      get { return userRol; }
+      set { userRol = value; }
     }
 
     public int Edad

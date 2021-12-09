@@ -11,7 +11,7 @@
   </section>
   <section class="fondo-banner">
     <div class="caja-iniciar-registro">
-      <form class="row">
+      <div class="row">
         <%--RUT--%>
         <div class="row">
           <label for="TxtRut" class="col-form-label">Rut</label>
@@ -92,6 +92,10 @@
             <asp:DropDownList ID="DropComunidad" runat="server"></asp:DropDownList>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator12" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="DropComunidad"></asp:RequiredFieldValidator>
           </div>
+          <div class="col-6">
+            <asp:TextBox ID="TxtRol" runat="server" type="text" class="form-control" placeholder="Ingrese su Rol 1-2-3"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator13" ForeColor="Red" runat="server" ErrorMessage="Campo Requerido" ControlToValidate="TxtRol"></asp:RequiredFieldValidator>
+          </div>
         </div>
         <br />
         <div class="row">
@@ -100,9 +104,10 @@
             <asp:Label ID="LbRegistro" runat="server" Text="Aqui dira si se registro bien"></asp:Label><br />
             <asp:LinkButton ID="LnkCrearComunidad" runat="server" CausesValidation="false" ForeColor="White" OnClick="LnkCrearComunidad_Click">Crear Nueva comunidad</asp:LinkButton>
           </div>
+          
         </div>
         <br />
-      </form>
+      </div>
     </div>
     <br />
   </section>
