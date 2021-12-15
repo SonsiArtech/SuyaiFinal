@@ -4,7 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
   <div class="fondo">
-    <h2 class="titulo">Bienvenido</h2>
+    <h2 class="titulo">Bienvenido <asp:Label ID="lbNombreBienvenido" runat="server" Text="Humano"></asp:Label></h2>
+    
   </div>
   <!-- banner principal -->
   <section class="banner-principal">

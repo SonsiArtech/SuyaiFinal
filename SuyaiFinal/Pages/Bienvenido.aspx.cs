@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using SuyaiFinal.Clases;
 using SuyaiFinal.Controller;
+using System.Globalization;
 
 namespace SuyaiFinal.Pages
 {
@@ -16,8 +17,7 @@ namespace SuyaiFinal.Pages
       //Control DE ACCESO
       if (Session["login"] == null)
       {
-        Response.Write("Acceso no permitido");
-        System.Threading.Thread.Sleep(2000);
+        Session["error"] = "Acceso no permiritdo";
         Response.Redirect("IniciarSesion.aspx");
       }
       //Fin DE CONTROL DE USUARIO
@@ -26,10 +26,13 @@ namespace SuyaiFinal.Pages
       Usuario usr = (Usuario)Session["login"];
       if (usr.UserRol.Codigo != 1)
       {
-        Response.Write("Rol no valido");
-        System.Threading.Thread.Sleep(2000);
-        Response.Redirect("Registrarse.aspx");
+        Session["error"] = "Rol no valido";
+        Response.Redirect("IniciarSesion.aspx");
       }
+      //cargar datos de usuario
+      string nombre = usr.Nombre;
+      string apellido = usr.Apellido;
+      lbNombreBienvenido.Text =  CultureInfo.CurrentCulture.TextInfo.ToTitleCase(nombre + " " +apellido) ;
 
     }
   }

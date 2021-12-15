@@ -65,9 +65,9 @@ namespace SuyaiFinal.Controller
         Rol r2 = Rol.findRol(2);
         Rol r3 = Rol.findRol(3);
 
-        listaUsuario.Add(new Usuario("1-1", "nicolas", "lara", 25, 987654321, "n@lara.com", "casita 123", "Maipu", "nico", "lara", "Mapu", r1));
-        listaUsuario.Add(new Usuario("1-2", "raul", "mendez", 23, 987654322, "r@mendez.com", "casita 456", "Maipu", "raul", "mendez", "Mapu", r2));
-        listaUsuario.Add(new Usuario("1-3", "sebastian", "pizarro", 30, 987654323, "s@pizarro.com", "casita 789", "Maipu", "nico", "pizarro", "Mapu", r3));
+        listaUsuario.Add(new Usuario("19.241.078-9", "nicolas", "lara", 25, 987654321, "nicolas@lara.com", "casita 123", "Maipu", "nico", "lara", "Mapu", r1));
+        listaUsuario.Add(new Usuario("19.435.234-1", "raul", "mendez", 23, 987654322, "r@mendez.com", "casita 456", "Valparaiso", "raul", "mendez", "Mapu", r1));
+        listaUsuario.Add(new Usuario("1-3", "sebastian", "pizarro", 30, 987654323, "s@pizarro.com", "casita 789", "Maipu", "seba", "pizarro", "Mapu", r3));
       }
 
 

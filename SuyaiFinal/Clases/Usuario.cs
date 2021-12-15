@@ -14,6 +14,7 @@
     private string user;
     private string pass;
     private string comunidad;
+
     private Rol userRol;
 
     public Usuario()

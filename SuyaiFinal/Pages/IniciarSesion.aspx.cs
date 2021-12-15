@@ -9,6 +9,11 @@ namespace SuyaiFinal.Pages
     protected void Page_Load(object sender, EventArgs e)
     {
       UsuarioController.precargarUsuarios();
+
+      if (Session["error"] != null)
+      {
+        lbMensaje.Text = (string)Session["error"];
+      }
     }
 
     protected void BtnIngresar_Click(object sender, EventArgs e)

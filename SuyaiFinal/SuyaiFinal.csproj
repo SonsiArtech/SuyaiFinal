@@ -84,7 +84,6 @@
     <Content Include="Pages\Bienvenido.aspx" />
     <Content Include="Pages\CerrarSesion.aspx" />
     <Content Include="Pages\Contacto.aspx" />
-    <Content Include="Pages\ControlAjax.aspx" />
     <Content Include="Pages\CrearComunidad.aspx" />
     <Content Include="Pages\Favoritos.aspx" />
     <Content Include="Pages\index.aspx" />
@@ -129,13 +128,6 @@
     </Compile>
     <Compile Include="Pages\Contacto.aspx.designer.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\ControlAjax.aspx.cs">
-      <DependentUpon>ControlAjax.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\ControlAjax.aspx.designer.cs">
-      <DependentUpon>ControlAjax.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\CrearComunidad.aspx.cs">
       <DependentUpon>CrearComunidad.aspx</DependentUpon>

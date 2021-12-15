@@ -10,17 +10,31 @@
     <div class="caja-perfil">
       <div class="avatar">
       </div>
-      <h3>Ana Maria Pedroso</h3>
+      <h3><asp:Label ID="lbNombrePerfil" runat="server"></asp:Label></h3>
       <p class="poema">
-        <h5>19.567.243-k</h5>
-        <h5>27años</h5>
-        <h5>Chile, Maipú</h5>
-        <h5>Almirante Barroso #101</h5>
-        <h5>9 8765 4321</h5>
-        <h5>anamaria@gmail.com</h5>
-        <h5>Comunidad Valle Verde</h5>
-        <h5>No binario</h5>
-        <asp:LinkButton ID="LinkButton1" runat="server">Editar (aun no hace nada)</asp:LinkButton>
+        <h5>
+          <asp:Label ID="lbRutPerfil" runat="server"></asp:Label>
+        </h5>
+        <h5>
+          <asp:Label ID="lbEdadPerfil" runat="server"></asp:Label>
+        </h5>
+        <h5>
+          <asp:Label ID="lbComunaPerfil" runat="server"></asp:Label>
+        </h5>
+        <h5>
+          <asp:Label ID="lbDireccionPerfil" runat="server"></asp:Label>
+        </h5>
+        <h5>
+          <asp:Label ID="lbNumeroPerfil" runat="server"></asp:Label>
+        </h5>
+        <h5>
+          <asp:Label ID="lbCorreoPerfil" runat="server"></asp:Label>
+        </h5>
+        <h5>
+          <asp:Label ID="lbComunidadPerfil" runat="server"></asp:Label>
+        </h5>
+        <h5>No binario<asp:Label ID="lbGeneroPerfil" runat="server"></asp:Label></h5>
+        <asp:LinkButton ID="lnkEditar" runat="server">Editar (aun no hace nada)</asp:LinkButton>
       </p>
   </section>
 </asp:Content>
