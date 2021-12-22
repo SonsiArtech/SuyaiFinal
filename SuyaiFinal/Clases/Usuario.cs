@@ -14,16 +14,18 @@
     private string user;
     private string pass;
     private string comunidad;
+    private int userRol;
+    private string genero;
 
-    private Rol userRol;
+
 
     public Usuario()
     {
 
     }
 
-    public Usuario(string rut, string nombre, string apellido, int edad, int telefono, string correo, string direccion, string ciudad,
-      string user, string pass, string comunidad, Rol userRol)
+    public Usuario(string rut, string nombre, string apellido, int edad, int telefono, string correo, string direccion, string ciudad, 
+      string user, string pass, string comunidad, int userRol, string genero)
     {
       this.rut = rut;
       this.nombre = nombre;
@@ -37,9 +39,16 @@
       this.pass = pass;
       this.comunidad = comunidad;
       this.userRol = userRol;
+      this.genero = genero;
     }
 
-    public Rol UserRol
+    public string Genero
+    {
+      get { return genero; }
+      set { genero = value; }
+    }
+
+    public int UserRol
     {
       get { return userRol; }
       set { userRol = value; }

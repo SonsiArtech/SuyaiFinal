@@ -12,7 +12,7 @@ namespace SuyaiFinal.Controller
 
     //Metodos para agregar usuarios
     public static string AddUsuario(string rut, string nomb, string eda, string ape, string tele, string corr, string dire, string ciud,
-      string user, string pass, string idComunidad, Rol rol)
+      string user, string pass, string idComunidad, string rol)
     {
 
       try
@@ -34,7 +34,7 @@ namespace SuyaiFinal.Controller
           User = user,
           Pass = pass,
           Comunidad = idComunidad,
-          UserRol = rol
+          UserRol = int.Parse(rol)
         };
 
         listaUsuario.Add(usuario);
@@ -59,15 +59,9 @@ namespace SuyaiFinal.Controller
     {
       if (listaUsuario.Count < 1)
       {
-        Rol.addRol();
-
-        Rol r1 = Rol.findRol(1);
-        Rol r2 = Rol.findRol(2);
-        Rol r3 = Rol.findRol(3);
-
-        listaUsuario.Add(new Usuario("19.241.078-9", "nicolas", "lara", 25, 987654321, "nicolas@lara.com", "casita 123", "Maipu", "nico", "lara", "Mapu", r1));
-        listaUsuario.Add(new Usuario("19.435.234-1", "raul", "mendez", 23, 987654322, "r@mendez.com", "casita 456", "Valparaiso", "raul", "mendez", "Mapu", r1));
-        listaUsuario.Add(new Usuario("1-3", "sebastian", "pizarro", 30, 987654323, "s@pizarro.com", "casita 789", "Maipu", "seba", "pizarro", "Mapu", r3));
+        listaUsuario.Add(new Usuario("19.241.078-9", "nicolas", "lara", 25, 987654321, "nicolas@lara.com", "casita 123", "Maipu", "nico", "lara", "Mapu", 1, "No binario"));
+        listaUsuario.Add(new Usuario("19.435.234-1", "raul", "mendez", 23, 987654322, "r@mendez.com", "casita 456", "Valparaiso", "raul", "mendez", "Mapu", 1, "Masculino"));
+        listaUsuario.Add(new Usuario("1-3", "sebastian", "pizarro", 30, 987654323, "s@pizarro.com", "casita 789", "Maipu", "seba", "pizarro", "Mapu", 1 ,"Masculino"));
       }
 
 

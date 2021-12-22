@@ -26,6 +26,7 @@ namespace SuyaiFinal.Pages
       lbNumeroPerfil.Text = "+ 56 " + usr.Telefono;
       lbCorreoPerfil.Text = usr.Correo;
       lbComunidadPerfil.Text = usr.Comunidad;
+      lbGeneroPerfil.Text = usr.Genero;
 
     }
   }

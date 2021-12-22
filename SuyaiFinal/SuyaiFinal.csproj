@@ -106,7 +106,6 @@
     <Compile Include="Clases\Usuario.cs" />
     <Compile Include="Controller\ComunaController.cs" />
     <Compile Include="Controller\ComunidadController.cs" />
-    <Compile Include="Clases\Rol.cs" />
     <Compile Include="Controller\UsuarioController.cs" />
     <Compile Include="Pages\Bienvenido.aspx.cs">
       <DependentUpon>Bienvenido.aspx</DependentUpon>

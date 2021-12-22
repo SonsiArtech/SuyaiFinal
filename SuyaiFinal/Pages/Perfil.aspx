@@ -11,7 +11,7 @@
       <div class="avatar">
       </div>
       <h3><asp:Label ID="lbNombrePerfil" runat="server"></asp:Label></h3>
-      <p class="poema">
+      <div class="poema">
         <h5>
           <asp:Label ID="lbRutPerfil" runat="server"></asp:Label>
         </h5>
@@ -33,8 +33,11 @@
         <h5>
           <asp:Label ID="lbComunidadPerfil" runat="server"></asp:Label>
         </h5>
-        <h5>No binario<asp:Label ID="lbGeneroPerfil" runat="server"></asp:Label></h5>
+        <h5>
+          <asp:Label ID="lbGeneroPerfil" runat="server"></asp:Label>
+        </h5>
         <asp:LinkButton ID="lnkEditar" runat="server">Editar (aun no hace nada)</asp:LinkButton>
-      </p>
+      </div>
+      </div>
   </section>
 </asp:Content>

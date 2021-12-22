@@ -24,7 +24,7 @@ namespace SuyaiFinal.Pages
 
       //Control DE USUARIO
       Usuario usr = (Usuario)Session["login"];
-      if (usr.UserRol.Codigo != 1)
+      if (usr.UserRol != 1)
       {
         Session["error"] = "Rol no valido";
         Response.Redirect("IniciarSesion.aspx");

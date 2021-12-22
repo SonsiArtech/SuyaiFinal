@@ -64,7 +64,7 @@ namespace SuyaiFinal.Pages
     protected void BtnAgregar_Click(object sender, EventArgs e)
     {
       LbRegistro.Text = UsuarioController.AddUsuario(TxtRut.Text, TxtNombre.Text, TxtApellido.Text, TxtEdad.Text, TxtTelefono.Text, TxtCorreo.Text,
-        TxtDireccion.Text, DropComunas.SelectedValue, TxtUser.Text, TxtPass.Text, DropComunidad.SelectedValue, Rol.findRol(1));
+        TxtDireccion.Text, DropComunas.SelectedValue, TxtUser.Text, TxtPass.Text, DropComunidad.SelectedValue, TxtRol.Text);
 
     }
 
